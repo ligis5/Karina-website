@@ -1,0 +1,126 @@
+.kainorastis-section {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 6rem 0;
+}
+
+.kainorastis-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+}
+
+.title-center {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.kainorastis-title {
+  background-color: #ffffff;
+  color: #2b6838;
+  padding: 1.5rem 3rem;
+  font-size: 2.25rem;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 0.5rem;
+  border: 2px solid #2b6838;
+}
+
+.cards-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  flex: 1 1 380px;
+  max-width: 520px;
+  background-color: rgba(57, 71, 54, 0.85); /* greenish background */
+  border: 2px solid #F5EABD; /* gold border */
+  border-radius: 1rem;
+  padding: 2.5rem 2rem 3rem;
+  color: #ffffff;
+}
+
+.card-content {
+  margin-bottom: 1.75rem;
+}
+
+.price-card .card-content:last-child {
+  margin-bottom: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.service-title {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  color: #F5EABD;
+  font-weight: 600;
+}
+
+.service-detail {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+/* Ensure massage links are light yellow and without underline */
+.service-link,
+.service-link:visited {
+  color: #F5EABD;
+  text-decoration: none;
+}
+.service-link:hover,
+.service-link:focus,
+.service-link:focus-visible {
+  color: #D4AF37;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .cards-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-card {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .kainorastis-container {
+    padding: 3rem 1rem;
+  }
+
+  .kainorastis-title {
+    font-size: 1.75rem;
+    padding: 1rem 2rem;
+  }
+
+  .price-card {
+    padding: 2rem 1.5rem 2.5rem;
+  }
+
+  .service-title {
+    font-size: 1rem;
+  }
+
+  .service-detail {
+    font-size: 0.9rem;
+  }
+}

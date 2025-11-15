@@ -1,0 +1,83 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  padding-bottom: 6rem;
+}
+
+.pradzia-section {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 6rem; /* account for fixed header */
+}
+
+.intro-section {
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+    text-align: center;
+}
+
+.logo-image {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+  border: 2px solid #F5EABD;
+}
+
+.quote-box {
+  background-color: rgba(57, 71, 54, 0.7);
+  padding: 2.5rem;
+  margin-bottom: 1.25rem;
+  border: 2px solid #F5EABD;
+}
+
+.quote-text {
+  color: #F5EABD;
+  line-height: 2;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-wrapper {
+  display: inline-block;
+}
+
+.registration-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2b6838;
+  text-decoration: none;
+  border: 2px solid #2b6838;
+  transition: color 0.3s;
+}
+
+
+.icon {
+  margin-right: 0.75rem;
+  color: #2b6838;
+  font-size: 1.5rem;
+}
+
+.button-text {
+  color: #2b6838;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 640px) {
+  .intro-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}

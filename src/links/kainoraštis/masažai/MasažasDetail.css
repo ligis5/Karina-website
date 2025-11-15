@@ -1,0 +1,142 @@
+.masazas-detail-section {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 6rem 0;
+}
+
+.apie-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.apie-title {
+  background-color: white;
+  color: #394736;
+  padding: 1.5rem 3rem;
+  font-size: 2.25rem;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 0.375rem;
+  border: 2px solid #394736;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.karina-image {
+  width: auto;
+  height: 95vh;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  border: 2px solid #F5EABD;
+}
+
+.text-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.text-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 3rem;
+  padding-bottom: 3.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 2px solid #394736;
+}
+
+.massage-info {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #394736;
+}
+
+.massage-info p {
+  font-size: 1.125rem;
+  color: #394736;
+  margin-bottom: 0.5rem;
+}
+
+.text-content {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 2;
+  color: #394736;
+}
+
+.back-button-container {
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  background-color: #394736;
+  color: #F5EABD;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1.125rem;
+  transition: background-color 0.3s;
+}
+
+.back-link:hover {
+  background-color: #2b6838;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .karina-image {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+  }
+
+  .text-container {
+    padding: 0 1rem;
+  }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 640px) {
+  .apie-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .apie-title {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+
+  .karina-image {
+    height: auto;
+    max-height: 50vh;
+  }
+
+  .text-box {
+    padding: 2rem;
+  }
+
+  .text-content {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+}

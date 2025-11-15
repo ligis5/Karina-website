@@ -1,0 +1,115 @@
+.kontaktai-section {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 6rem 0;
+}
+
+.kontaktai-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+}
+
+.cards-row {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 420px;
+  border-radius: 1rem;
+  padding: 2.5rem;
+}
+
+.light-card {
+  background: rgba(255, 255, 255, 0.8);
+  color: #2b6838;
+  border: 2px solid #2b6838;
+}
+
+.google-maps {
+  width: 100%;
+  height: 320px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 2px solid #2b6838;
+}
+.google-maps iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.dark-card {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.section-title {
+  font-size: 1.875rem; /* text-3xl */
+  margin-bottom: 1.5rem;
+  color: #2b6838;
+}
+
+.section-text {
+  font-size: 1.125rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+
+.section-contacts .block { 
+    display: block;
+ margin-bottom: .5rem;
+ font-size: 1.25rem;
+ }
+
+.contact-link { color: #2b6838; text-decoration: none; }
+.contact-link:hover { color: #FFD54F; }
+
+.center { text-align: center; }
+.right { text-align: right; }
+
+.maps-link {
+  display: inline-block;
+  color: #ffffff;
+  background: #2b6838;
+  padding: 0.75rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+.maps-link:hover { filter: brightness(1.1); }
+.icon-left { margin-right: 0.75rem; }
+
+.contact-form .input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #F5EABD; /* gold */
+  color: inherit;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  outline: none;
+}
+.contact-form .input::placeholder { color: #e5e7eb; opacity: .85; }
+
+.submit-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.submit-btn:hover { color: #FFD54F; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .kontaktai-container { padding: 3rem 1rem; }
+  .section-title { font-size: 1.5rem; }
+}

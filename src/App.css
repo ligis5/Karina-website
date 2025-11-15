@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #394736;
+    height: fit-content;
+    color: #F5EABD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.header.scrolled{
+    background-color: rgba(57, 71, 54, 0.7);
+}
+.header-links{
+    display: flex;
+    gap: 5vw;
+    padding-right: 20px;
+    align-items: center;
+    height: 80px;
+    font-family: 'Oswald', sans-serif;
+}
+.header-links a,
+.header-links .linklike {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    text-decoration: none;
+    color: #F5EABD;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.header-links a:hover,
+.header-links .linklike:hover,
+.header-links a:focus-visible,
+.header-links .linklike:focus-visible {
+    color: #D4AF37;
+    outline: none;
+}
+.header-links h1{
+    font-size: clamp(1.28rem, 3.2vw, 1.92rem);
+    white-space: nowrap;
+}
+.logo{
+    height: 80px;
+    left: 0;
+}
+.fill-in{
+    height: 80px;
+    width: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+    .header-links{
+        gap: 20px;
+        padding-left: 30px;
+        height: 60px;
+    }
+    .header-links h1{
+        font-size: clamp(0.96rem, 2.88vw, 1.6rem);
+    }
+    .logo{
+        height: 60px;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+    .header{
+        font-size: 20px;
+    }
+    .header-links{
+        gap: 10px;
+        padding-left: 0;
+        height: 50px;
+    }
+    .header-links h1{
+        font-size: clamp(0.8rem, 2.4vw, 1.28rem);
+    }
+    .logo{
+        height: 50px;
+    }
+    .fill-in{
+        height: 50px;
+        width: auto;
+    }
 }
