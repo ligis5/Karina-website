@@ -15,7 +15,7 @@ function ApieMane() {
         </div>
         <div className="apie-content-wrapper">
           <div className="apie-image-wrapper">
-            <img src={karina} className="karina-image" alt="Karina" />
+            <img src={karina} className="apie-karina-image" alt="Karina" />
             <div className="apie-text-container">
               <div className="apie-text-box" style={{ margin: 0 }}>
                 <h3 className="apie-text-content">
