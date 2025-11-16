@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Karina-website/static/css/main.08c8f612.css",
-    "main.js": "/Karina-website/static/js/main.f9f7c8f1.js",
+    "main.js": "/Karina-website/static/js/main.0e8b7de6.js",
     "static/js/453.e3000c47.chunk.js": "/Karina-website/static/js/453.e3000c47.chunk.js",
     "static/media/1.jpg": "/Karina-website/static/media/1.e9b3c21133c77eba429b.jpg",
     "static/media/2.jpg": "/Karina-website/static/media/2.4a598c4935a06bc93197.jpg",
@@ -27,11 +27,11 @@
     "static/media/fa-regular-400.woff2": "/Karina-website/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
     "index.html": "/Karina-website/index.html",
     "main.08c8f612.css.map": "/Karina-website/static/css/main.08c8f612.css.map",
-    "main.f9f7c8f1.js.map": "/Karina-website/static/js/main.f9f7c8f1.js.map",
+    "main.0e8b7de6.js.map": "/Karina-website/static/js/main.0e8b7de6.js.map",
     "453.e3000c47.chunk.js.map": "/Karina-website/static/js/453.e3000c47.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08c8f612.css",
-    "static/js/main.f9f7c8f1.js"
+    "static/js/main.0e8b7de6.js"
   ]
 }
