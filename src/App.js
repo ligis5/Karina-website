@@ -31,8 +31,8 @@ function AppContent() {
 
   const scrollToSection = (sectionId) => {
     // If not on home page, navigate to home first
-    if (location.pathname !== "/") {
-      navigate("/");
+    if (location.pathname !== "/Karina-website/") {
+      navigate("/Karina-website/");
       // Wait for navigation to complete, then scroll
       setTimeout(() => {
         const element = document.getElementById(sectionId);
@@ -87,7 +87,7 @@ function AppContent() {
 
       <Routes>
         <Route
-          path="/"
+          path="/Karina-website/"
           element={
             <>
               <div id="home">
@@ -99,7 +99,10 @@ function AppContent() {
             </>
           }
         />
-        <Route path="/masazas/:slug" element={<MasažasDetail />} />
+        <Route
+          path="/Karina-website/masazas/:slug"
+          element={<MasažasDetail />}
+        />
       </Routes>
     </div>
   );

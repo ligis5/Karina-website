@@ -5,6 +5,24 @@
   min-height: 100vh;
   padding: 6rem 0;
 }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(57, 71, 54, 0.85);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F5EABD;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
 
 .apie-container {
   width: 100%;
@@ -73,25 +91,25 @@
     flex-direction: column;
   }
 
-  .apie-patirtis-container > .apie-text-container {
-  animation: blurAnimation both;
-  animation-timeline: view();
-}
   .apie-patirtis-container{
     display:flex;
     flex-direction:column;
     max-height: 600px;
     overflow-y: scroll;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 0.75rem;
+background: rgba(255, 255, 255, 0.26);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(10.7px);
     border: 2px solid #2b6838;
-    padding-top: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 .apie-image-wrapper{
     margin-bottom: 20px;
   }
   .apie-karina-image {
-    width: 100%;
+    width: 70%;
     height: auto;
     max-height: 70vh;
   }
@@ -106,6 +124,19 @@
     line-height: 1.75;
   }
 
+  /* Track */
+.apie-patirtis-container::-webkit-scrollbar-track {
+  margin-top: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 5px;
+}
+
+/* Handle */
+.apie-patirtis-container::-webkit-scrollbar-thumb {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 }
 
 /* Responsive design for mobile phones */
@@ -113,21 +144,7 @@
   .apie-container {
     padding: 1.5rem 1rem;
   }
-  /* .apie-patirtis-container > .apie-text-container {
-  animation: blurAnimation both;
-  animation-timeline: view();
-}
-  .apie-patirtis-container{
-    display:flex;
-    flex-direction:column;
-    max-height: 600px;
-    overflow-y: scroll;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 0.75rem;
-    border: 2px solid #2b6838;
-    padding-top: 5rem;
-  } */
-
+ 
   .apie-image-wrapper{
     margin-bottom: 20px;
   }
@@ -144,17 +161,3 @@
   }
 }
 
-@keyframes blurAnimation {
-  0% {
-    filter: blur(10px);
-  }
-
-  45%,
-  55% {
-    filter: blur(0px);
-  }
-
-  100% {
-    filter: blur(10px);
-  }
-}
