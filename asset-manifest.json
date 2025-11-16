@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Karina-website/static/css/main.08c8f612.css",
+    "main.js": "/Karina-website/static/js/main.f9f7c8f1.js",
+    "static/js/453.e3000c47.chunk.js": "/Karina-website/static/js/453.e3000c47.chunk.js",
+    "static/media/1.jpg": "/Karina-website/static/media/1.e9b3c21133c77eba429b.jpg",
+    "static/media/2.jpg": "/Karina-website/static/media/2.4a598c4935a06bc93197.jpg",
+    "static/media/3.jpg": "/Karina-website/static/media/3.badcd24f0f77d1c6bd6e.jpg",
+    "static/media/4.jpg": "/Karina-website/static/media/4.01184de99d6d76388325.jpg",
+    "static/media/fa-solid-900.svg": "/Karina-website/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
+    "static/media/fa-brands-400.svg": "/Karina-website/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg",
+    "static/media/fa-solid-900.eot": "/Karina-website/static/media/fa-solid-900.9bbb245e67a133f6e486.eot",
+    "static/media/fa-solid-900.ttf": "/Karina-website/static/media/fa-solid-900.be9ee23c0c6390141475.ttf",
+    "static/media/logo-icon.png": "/Karina-website/static/media/logo-icon.f4ea1eb14adb7362a273.png",
+    "static/media/fa-regular-400.svg": "/Karina-website/static/media/fa-regular-400.4689f52cc96215721344.svg",
+    "static/media/fa-brands-400.eot": "/Karina-website/static/media/fa-brands-400.23f19bb08961f37aaf69.eot",
+    "static/media/fa-brands-400.ttf": "/Karina-website/static/media/fa-brands-400.527940b104eb2ea366c8.ttf",
+    "static/media/karina.jpg": "/Karina-website/static/media/karina.9db5cfc895215286fe89.jpg",
+    "static/media/fa-solid-900.woff": "/Karina-website/static/media/fa-solid-900.eeccf4f66002c6f2ba24.woff",
+    "static/media/fa-brands-400.woff": "/Karina-website/static/media/fa-brands-400.2285773e6b4b172f07d9.woff",
+    "static/media/fa-solid-900.woff2": "/Karina-website/static/media/fa-solid-900.1551f4f60c37af51121f.woff2",
+    "static/media/fa-brands-400.woff2": "/Karina-website/static/media/fa-brands-400.d878b0a6a1144760244f.woff2",
+    "static/media/logo-name.jpg": "/Karina-website/static/media/logo-name.35b75343a9f3beca7cea.jpg",
+    "static/media/fa-regular-400.eot": "/Karina-website/static/media/fa-regular-400.77206a6bb316fa0aded5.eot",
+    "static/media/fa-regular-400.ttf": "/Karina-website/static/media/fa-regular-400.491974d108fe4002b2aa.ttf",
+    "static/media/fa-regular-400.woff": "/Karina-website/static/media/fa-regular-400.bb58e57c48a3e911f15f.woff",
+    "static/media/fa-regular-400.woff2": "/Karina-website/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
+    "index.html": "/Karina-website/index.html",
+    "main.08c8f612.css.map": "/Karina-website/static/css/main.08c8f612.css.map",
+    "main.f9f7c8f1.js.map": "/Karina-website/static/js/main.f9f7c8f1.js.map",
+    "453.e3000c47.chunk.js.map": "/Karina-website/static/js/453.e3000c47.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08c8f612.css",
+    "static/js/main.f9f7c8f1.js"
+  ]
+}
