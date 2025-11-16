@@ -62,17 +62,34 @@
 
 .apie-text-content {
   /* margin-bottom: 1.5rem; */
-  font-size: 1.10rem;
+  font-size: 0.8rem;
   line-height: 2;
   color: #F5EABD;
 }
 
 /* Responsive design for tablets and smaller screens */
-@media (max-width: 1072px) {
+@media (max-width: 1200px) {
   .apie-content-wrapper {
     flex-direction: column;
   }
 
+  .apie-patirtis-container > .apie-text-container {
+  animation: blurAnimation both;
+  animation-timeline: view();
+}
+  .apie-patirtis-container{
+    display:flex;
+    flex-direction:column;
+    max-height: 600px;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.75rem;
+    border: 2px solid #2b6838;
+    padding-top: 20%;
+  }
+.apie-image-wrapper{
+    margin-bottom: 20px;
+  }
   .apie-karina-image {
     width: 100%;
     height: auto;
@@ -96,7 +113,7 @@
   .apie-container {
     padding: 1.5rem 1rem;
   }
-  .apie-patirtis-container > .apie-text-container {
+  /* .apie-patirtis-container > .apie-text-container {
   animation: blurAnimation both;
   animation-timeline: view();
 }
@@ -109,7 +126,7 @@
     border-radius: 0.75rem;
     border: 2px solid #2b6838;
     padding-top: 5rem;
-  }
+  } */
 
   .apie-image-wrapper{
     margin-bottom: 20px;
@@ -123,6 +140,7 @@
   .apie-text-content {
     font-size: 0.7rem;
     line-height: 1.75;
+    letter-spacing: 0.5px;
   }
 }
 
