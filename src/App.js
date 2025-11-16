@@ -1,5 +1,6 @@
 import "./App.css";
 import "./fonts.css";
+import { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -7,7 +8,7 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
-import logo from "./components/img/logo-icon.jpg";
+import logo from "./components/img/logo-icon.png";
 import Pradžia from "./links/pradžia/Pradžia.jsx";
 import ApieMane from "./links/apie-mane/Apie-mane.jsx";
 import Kainoraštis from "./links/kainoraštis/Kainoraštis.jsx";
@@ -17,6 +18,16 @@ import MasažasDetail from "./links/kainoraštis/masažai/MasažasDetail.jsx";
 function AppContent() {
   const navigate = useNavigate();
   const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId) => {
     // If not on home page, navigate to home first
@@ -39,7 +50,7 @@ function AppContent() {
 
   return (
     <div className="App">
-      <header className="header">
+      <header className={`header ${isScrolled ? "scrolled" : ""}`}>
         <img src={logo} className="logo" alt="logo" />
         <div className="header-links">
           <button

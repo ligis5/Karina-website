@@ -6,19 +6,19 @@
   padding: 6rem 0;
 }
 
-.apie-container {
+.masazas-apie-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 6rem 1rem;
 }
 
-.title-section {
+.masazas-title-section {
   text-align: center;
   margin-bottom: 4rem;
 }
 
-.apie-title {
+.masazas-apie-title {
   background-color: white;
   color: #394736;
   padding: 1.5rem 3rem;
@@ -29,7 +29,7 @@
   border: 2px solid #394736;
 }
 
-.content-wrapper {
+.masazas-content-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -45,13 +45,13 @@
   border: 2px solid #F5EABD;
 }
 
-.text-container {
+.masazas-text-container {
   flex: 1;
   max-width: 600px;
   margin: 0 auto;
 }
 
-.text-box {
+.masazas-text-box-detail {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 3rem;
   padding-bottom: 3.5rem;
@@ -60,26 +60,26 @@
   border: 2px solid #394736;
 }
 
-.massage-info {
+.masazas-info {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #394736;
 }
 
-.massage-info p {
+.masazas-info p {
   font-size: 1.125rem;
   color: #394736;
   margin-bottom: 0.5rem;
 }
 
-.text-content {
+.masazas-text-content {
   margin-bottom: 1.5rem;
   font-size: 1.25rem;
   line-height: 2;
   color: #394736;
 }
 
-.back-button-container {
+.masazas-back-button-container {
   text-align: center;
 }
 
@@ -100,7 +100,7 @@
 
 /* Responsive design for tablets and smaller screens */
 @media (max-width: 1024px) {
-  .content-wrapper {
+  .masazas-content-wrapper {
     flex-direction: column;
   }
 
@@ -110,18 +110,18 @@
     max-height: 70vh;
   }
 
-  .text-container {
+  .masazas-text-container {
     padding: 0 1rem;
   }
 }
 
 /* Responsive design for mobile phones */
 @media (max-width: 640px) {
-  .apie-container {
+  .masazas-apie-container {
     padding: 1.5rem 1rem;
   }
 
-  .apie-title {
+  .masazas-apie-title {
     font-size: 1.5rem;
     padding: 1rem 2rem;
   }
@@ -131,11 +131,11 @@
     max-height: 50vh;
   }
 
-  .text-box {
+  .masazas-text-box {
     padding: 2rem;
   }
 
-  .text-content {
+  .masazas-text-content {
     font-size: 1rem;
     line-height: 1.75;
   }

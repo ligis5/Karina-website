@@ -6,8 +6,8 @@ function Kontaktai() {
   return (
     <section id="contact" className="kontaktai-section" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="kontaktai-container">
-        <div className="cards-row">
-          <div className="card light-card">
+        <div className="kontaktai-cards-row">
+          <div className="kontaktai-card kontaktai-light-card">
             <div className='google-maps'>
               <iframe
                 title="Google Map"

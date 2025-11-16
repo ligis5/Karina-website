@@ -21,7 +21,7 @@
     transition: background-color 0.3s ease;
 }
 .header.scrolled{
-    background-color: rgba(57, 71, 54, 0.7);
+    background-color: rgba(57, 71, 54, 0.6);
 }
 .header-links{
     display: flex;

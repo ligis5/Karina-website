@@ -13,7 +13,7 @@
   padding: 6rem 1rem;
 }
 
-.cards-row {
+.kontaktai-cards-row {
   display: flex;
   gap: 2rem;
   align-items: stretch;
@@ -21,13 +21,13 @@
   flex-wrap: wrap;
 }
 
-.card {
+.kontaktai-card {
   flex: 1 1 420px;
   border-radius: 1rem;
   padding: 2.5rem;
 }
 
-.light-card {
+.kontaktai-light-card {
   background: rgba(255, 255, 255, 0.8);
   color: #2b6838;
   border: 2px solid #2b6838;

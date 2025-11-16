@@ -26,7 +26,7 @@ function MasažasDetail() {
   if (!massage) {
     return (
       <div className="masazas-detail-section" style={{ paddingTop: '10rem' }}>
-        <div className="apie-container">
+        <div className="masazas-apie-container">
           <h2>Masažas nerastas</h2>
           <Link to="/" className="back-link">Grįžti į pradžią</Link>
         </div>
@@ -36,25 +36,25 @@ function MasažasDetail() {
 
   return (
     <div className="masazas-detail-section" style={{ backgroundImage: `url(${bgImage})` }}>
-      <div className="apie-container">
-        <div className="title-section">
-          <h2 className="apie-title">{massage.title}</h2>
+      <div className="masazas-apie-container">
+        <div className="masazas-title-section">
+          <h2 className="masazas-apie-title">{massage.title}</h2>
         </div>
-        <div className="content-wrapper">
+        <div className="masazas-content-wrapper">
           <img src={karina} className="karina-image" alt="Karina" />
-          <div className="text-container">
-            <div className="text-box">
-              <div className="massage-info">
+          <div className="masazas-text-container">
+            <div className="masazas-text-box-detail">
+              <div className="masazas-info">
                 <p><strong>Trukmė:</strong> {massage.duration}</p>
                 <p><strong>Kaina:</strong> {massage.price}</p>
               </div>
-              <h3 className="text-content">
+              <h3 className="masazas-text-content">
                 Masažas man nėra tik technika – tai menas išgirsti kūną. Kiekvienas žmogus atsineša savą istoriją, o per
                 prisilietimą aš padedu jam išlaisvinti įtampą, paleisti emocijas ir sugrįžti į vidinę pusiausvyrą. Mano
                 tikslas – ne tik atpalaiduoti kūną, bet ir sušvelninti sielą.
               </h3>
             </div>
-            <div className="back-button-container">
+            <div className="masazas-back-button-container">
               <Link to="/" className="back-link">Grįžti į pradžią</Link>
             </div>
           </div>
