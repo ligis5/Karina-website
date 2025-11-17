@@ -14,6 +14,7 @@ import ApieMane from "./links/apie-mane/Apie-mane.jsx";
 import Kainoraštis from "./links/kainoraštis/Kainoraštis.jsx";
 import Kontaktai from "./links/kontaktai/Kontaktai.jsx";
 import MasažasDetail from "./links/kainoraštis/masažai/MasažasDetail.jsx";
+import Galerija from "./links/galerija/Galerija.jsx";
 
 function AppContent() {
   const navigate = useNavigate();
@@ -93,6 +94,7 @@ function AppContent() {
               <div id="home">
                 <Pradžia />
               </div>
+              <Galerija />
               <ApieMane />
               <Kainoraštis />
               <Kontaktai />

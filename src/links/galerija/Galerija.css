@@ -1,0 +1,20 @@
+.thumbnails{
+    display: flex;
+    background-color: rgba(57, 71, 54, 0.85);
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.thumbnail-image{
+    height: 150px;
+    border: 2px solid #F5EABD;
+    margin: 0.1rem;
+}
+.thumbnail-image:hover{
+    border: 2px solid #D4AF37;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+.thumbnails::-webkit-scrollbar {
+    display: none;
+}
