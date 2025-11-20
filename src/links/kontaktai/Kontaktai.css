@@ -11,6 +11,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 6rem 1rem;
+  
 }
 
 .kontaktai-cards-row {
@@ -25,6 +26,9 @@
   flex: 1 1 420px;
   border-radius: 1rem;
   padding: 2.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(10.7px);
 }
 
 .kontaktai-light-card {

@@ -1,8 +1,10 @@
 import images from "./imagesImport";
 import { useEffect, useState, useRef } from "react";
+import useIsMobile from "../../components/isMobile";
 
 const Thumbnails = ({ showImage }) => {
   const [scrollDirection, setScrollDirection] = useState(null); // 'left', 'right', or null
+  const isMobile = useIsMobile();
   const thumbnailsRef = useRef(null);
   const animationFrameRef = useRef(null);
 
@@ -21,7 +23,9 @@ const Thumbnails = ({ showImage }) => {
       setScrollDirection(null);
     }
   };
+  // attach mousemove listener
   useEffect(() => {
+    if (isMobile) return; // disable on mobile
     const el = thumbnailsRef.current;
     if (!el) return;
 
@@ -32,6 +36,7 @@ const Thumbnails = ({ showImage }) => {
     };
   }, []);
 
+  // auto scroll function
   const scroll = (e) => {
     if (!scrollDirection) {
       animationFrameRef.current = null;
@@ -56,8 +61,9 @@ const Thumbnails = ({ showImage }) => {
       }
     }
   };
-
+  // trigger scroll on direction change
   useEffect(() => {
+    if (isMobile) return; // disable on mobile
     const el = thumbnailsRef.current;
     if (!el) return;
 
