@@ -1,7 +1,7 @@
 import images from "./imagesImport";
 import { useEffect, useState, useRef } from "react";
 
-const Thumbnails = () => {
+const Thumbnails = ({ showImage }) => {
   const [scrollDirection, setScrollDirection] = useState(null); // 'left', 'right', or null
   const thumbnailsRef = useRef(null);
   const animationFrameRef = useRef(null);
@@ -77,6 +77,7 @@ const Thumbnails = () => {
     <div className="thumbnails" ref={thumbnailsRef}>
       {images.map((img) => (
         <img
+          onClick={() => showImage(img.original)}
           src={img.thumbnail}
           alt="thumbnail"
           className="thumbnail-image"

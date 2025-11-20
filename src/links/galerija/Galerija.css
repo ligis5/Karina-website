@@ -1,8 +1,14 @@
+.galerija-section{
+    background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 .thumbnails{
     display: flex;
     background-color: rgba(57, 71, 54, 0.85);
     overflow-x: scroll;
     overflow-y: hidden;
+    padding-bottom: 1rem;
 }
 .thumbnail-image{
     height: 150px;
@@ -17,4 +23,19 @@
 }
 .thumbnails::-webkit-scrollbar {
     display: none;
+}
+.originals{
+    text-align: center;
+    background-color: rgba(57, 71, 54, 0.85);
+
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.original-photo{
+    max-width: 95vw;
+    width: fit-content;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.375rem;
+    border: 2px solid #F5EABD;
 }
